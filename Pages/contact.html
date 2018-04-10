@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Vianney MORAIN Contact</title>
+		
+		<div class = "stylesheet">
+			<link rel ="stylesheet" href="../bootstrap/css/bootstrap.css"/>
+			<link rel="stylesheet" href="../Stylesheet/Global.css" />
+			<link rel="stylesheet" href="../Stylesheet/contact.css" />
+
+		</div>
+
+		<meta charset = "utf-8">
+	</head>
+
+	<body>
+		<header>
+			<a href = "../index.html"><h1>Page perso Vianney Morain</h1><a>
+		</header>
+		
+		<nav id = "nav">
+			<h2>Contact</h2>
+		</nav>
+				
+		<section class = "container">
+			<div class = "row"> 
+				<div class ="col-sm-12">
+					
+					Vous pouvez me contacter en remplissant directement ce formulaire, je vous répondrai alors dès que possible 
+				
+				</div>
+			</div>
+			
+			<div class="row">
+			
+				<form method = "post" action = "../Action/send_mail.php" class ="col-sm-12">
+					<div class = "row form-group">
+						<label for = "mail" class="col-sm-6 offset-sm-3"></br>Votre adresse mail</label>
+						<input type = "mail" name = "mail" class ="form-control col-sm-6 offset-sm-3" id = "name" autofocus required/>
+					</div>
+					<div class ="row form-group">
+						<label for = "message" class ="col-6 offset-3"></br>Votre message<br></label>
+						<textarea type = "text" name = "message" id = "message" class ="form-control col-sm-6 offset-sm-3" i rows = "6"></textarea>
+					</div>
+					</br>
+					<div class="row form-groupe"> 
+						<input type="submit" class ="form-control col-sm-2 offset-sm-3" value="Envoyer" />
+					</div>
+				</form>
+			
+			</div>
+				
+		</section>
+		
+		<footer>
+			<p><a href = "../CV/CV.pdf" id = "CV"> Acces à mon CV</a></p>
+			
+			<nav>
+				<ul>
+					<li id = "contact" > <a href = "Pages/contact.html" >me contacter|</a></li>
+					<li><a href="https://www.facebook.com/vianney.morain/"><img src="../Images_site/Facebook.png" alt="Facebook"  /></a> </li>
+					<li><a href="https://twitter.com/vianney.morain"><img src="../Images_site/Twitter.png" alt="Twitter"  /></a></li>
+					<li><a href="https://fr.linkedin.com/in/vianney-morain/"><img src="../Images_site/LinkedIn.png" alt="LinkedIn" /></a></li>
+				</ul>
+			</nav>
+		</footer>
+		
+	</body>
+
+</html>

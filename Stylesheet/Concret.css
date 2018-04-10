@@ -1,0 +1,116 @@
+section
+{
+
+	width : 85%;
+	margin : auto;
+	margin-top : 30px;
+	padding : 25px;
+	
+	background-color : rgba(102, 131, 182, 0.9);
+	
+	border-radius : 10px;
+	display : flex;
+	flex-direction : column;
+	
+}
+
+section header h2
+{
+
+	font-family : Foro, titillium,"cooper black", "arial black", sans-serif;
+	font-size : 170%;
+	color : #8dc8fb;
+
+	margin-left : 15%;
+}
+
+h3
+{
+	text-decoration : underline;
+	font-style : normal;
+	font-weight : bold;
+	margin-bottom : 1%;
+}
+
+p
+{
+	text-indent : 2%;
+	margin-top : 1px;
+}
+
+
+#pause p
+{
+	text-indent : 0%;
+}
+
+aside
+{
+	display : flex;
+	justify-content: space-between;
+	padding-right : 70px;
+}
+
+
+figure img
+{
+	border-radius : 10px;
+	box-shadow : none;
+}
+
+#Logos_Adobe
+{
+	width : 50%;
+}
+
+#Logos_Office
+{
+	width : 25%;
+}
+
+#capture_CC
+{
+	width : 60%;
+}
+
+#capture_amtemu
+{
+	width : 65%;
+}
+
+
+
+ul
+{
+	list-style-type :  circle;
+}
+
+em
+{
+	text-decoration : underline;
+}
+
+
+table
+{
+	border-collapse : collapse;
+	margin-left : 10%;
+}
+
+td
+{
+	border : 1px solid black;
+	padding : 17px;
+	padding-bottom : 7px;
+	padding-top : 7px;
+}
+
+iframe
+{
+	margin : auto;
+}
+
+img
+{
+	width : 100%;
+}

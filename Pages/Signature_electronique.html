@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>crack Suite adobe (mac/pc)</title>
+		
+		<div class = "stylesheet">
+			<link rel="stylesheet" href="../Stylesheet/Global.css" />
+			<link rel="stylesheet" href="../Stylesheet/Concret.css" />
+
+		</div>
+
+		<meta charset = "utf-8">
+	</head>
+
+	<body>
+		<header>
+			<a href = "../index.html"><h1>Page perso Vianney Morain</h1></a>
+		</header>
+		
+		<nav id = "nav">
+			<h2><a href = "Projets.html">Projets Persos</a>       ->       <a href =  "Tutos.html">Tutos</a>        ->      signature électronique</h2>
+		</nav>
+		
+		<section>
+			<header><h2>Créer sa propre signature électronique<h2></header>
+			<figure>
+				<img id = "signature FOCEEN" src = "" alt = "signature FOCEEN">
+			</figure>
+			<p>
+				Voici la signature que j'utilise lorsque j’envoie des mails pour le FOCEEN. Le mieux c’est encore d’avoir sa propre signature 
+				personnalisée avec le logo de son association ;)
+				<br>Je vais donc ici tenter de vous montrer comment faire :D
+			</p>
+			
+			<h3>Partie 1 : Présentation du Code </h3>
+			<figure>
+				<img id = "code_sig" src = "" alt = "code signature">
+				<figcaption>voilà le code que vous allez pouvoir modifier :) </figcaption>
+			</figure>
+			
+			<p> commencez par récupérer le code suivant et collez le sur le site <a href ="https://html-online.com/editor/"> html-online</a>. Si vous avez déjà un éditeur de texte du type 
+				Notepad++ ou autre, vous pouvez bien évidemment l'utiliser :)
+			</p>
+			
+			<p> voici les 9 choses à changer tout d'abord ;) </p>
+			
+			<h4>1) Les infos personnelles </h4>
+			
+			<ul>
+				<li>Ligne 10 : remplacez « Vianney MORAIN » par votre « Prénom NOM » </li>
+				<li>Et « Community Manager » par « votre poste » </li>
+				<li>Et mailto:vianney.morain@centrale-marseille.fr par mailto:prenom.nom@centralemarseille.fr <br>
+					--> (vous changez ainsi le lien quand on clique sur l’adresse mail) <l/i>
+				<li>Et vianney.morain@centrale-marseille.fr par prenom.nom@centrale-marseille.fr <br>
+					--> Là vous changez le texte qui affiche votre adresse mail </li>
+				<li>Et +33 (0)6 13 04 76 60 par votre numéro de téléphone (commençant par +33 (0), ça fait plus professionnel)
+			</ul>
+			
+			<h4 id = "pause" >2) Les sites où vous êtes référencés </h4>
+			
+			<p>Ligne 16 votre site perso : si vous n’en avez pas supprimez simplement toute la ligne 16 : de "td" à "/td"<br>
+				-->  Dans la balise "a" : changez "http://vmorain.perso.centrale-marseille.fr/" par "http://initialenom.perso.centrale-marseille.fr/"
+			</p>
+			<p>
+				Ligne.18 votre compte twitter :<br>
+				-->  Dans la balise "a" : changez "https://twitter.com/VianneyMorain" par l’adresse de votre compte twitter 
+				(l’adresse qui s’affiche quand vous êtes sur votre profil)
+			</p>
+			<p>
+				Ligne 20 votre page Facebook :<br>
+				--> Dans la balise "a" : changez "https://www.facebook.com/vianney.morain" par l’adresse de votre page de profil 
+				(l’adresse qui s’affiche quand vous êtes sur votre profil)
+			</p>
+			<p>
+				Ligne 22 votre compte LinkedIn : <br>
+				--> Dans la balise "a" : changez "https://www.linkedin.com/in/vianney-morain/" par l’adresse de votre page de profil 
+				(l’adresse qui s’affiche quand vous êtes sur votre profil)
+			</p>
+			<p>
+				Si vous n’êtes pas sur un des réseau ou que votre page perso est juste moche, vous pouvez supprimez simplement toute la 
+				ligne correspondante : de "td" à "/td"
+			</p>
+			
+			<h4>3) Vous voulez changer l’image à gauche ? </h4>
+			
+			<p>
+				Pas de soucis :D<br>
+				Comme vous pouvez le comprendre, les personnes auquels vous enverrez vos mail n’auront pas
+accès à votre ordinateur, il est donc impératif d’héberger toutes ces images sur votre site perso. Et
+ensuite indiquer dans src l’adresse absolue de votre image
+			</p>
+			<em>Coment faire :/<br></em>
+			<p>
+				Vous avez tous un site perso fourni par l’école ;) et si vous ne voulez pas utiliser le vôtre, votre
+				association en a un également, donc commençons.
+			</p>
+				Normalement si vous avez suivi le cours dédié au S5 vous savez que votre page se trouve à l’adresse
+				suivante : [initiale prénom][nom].perso.centrale-marseille.fr. Pour le modifier il vous faut télécharger un client SFTP 
+				(je vous recommande Filezilla) qui vous donnera accès au dossier qui vous est réservé sur les serveurs de l’école.
+			</p>
+			<p> 
+				Une fois que vous l’avez téléchargé, vous accédez à votre domaine en utilisant les paramètres suivant :<br>
+				--> Nom d’hôte : sas1.centrale-marseille.fr<br>
+				--> Nom d’utilisateur et mot de passe : ceux que vous utilisez normalement à centrale<br>
+			</p>
+			<p>
+				Voilà, créez maintenant un dossier « signature », mettez y votre image : monimage.png et votre image est 
+				désormais disponible à l’adresse : "[initiale prénom][nom].perso.centrale-marseille.fr/signature/monimage.png"
+			</p>
+			<p>
+				Ainsi ligne 8, dans src, vous pouvez modifier l’adresse en remplaçant la mienne par la vôtre.
+			</p>
+			<p>
+				!!!!pensez à modifier la taille également pour ne pas vous retrouver avec quelque chose de disproportionné ;)
+			</p>
+			
+			<h3>Astuce si vous voulez créer votre propre signature </h3>
+			
+			<p>
+				Vous l’avez vu, une signature électronique est en réalité du code HTML couplé à du CSS.Cependant, les clients de messagerie 
+				ne sont pas des navigateurs et peuvent ne pas comprendre toutes vos instructions. Ainsi tout d’abord, une signature doit être 
+				un unique fichier .html où vous insèrerez tout votre code.
+			</p>
+			<p>
+				Pour cela, quand vous aurez créé votre tableau, et remplit avec du texte et des images, il vous faudra alors le mettre en forme.
+			</p>
+			<p>
+				Pour cela dans les balises adaptées, utilisez l’attribut « style ». Dans cet attribut, vous pouvez y mettre toutes les instructions 
+				en CSS et elles seront reconnues
+			</p>
+			<p>
+				Attention : n'utilisez pas d’attributs spécifiques du style border, height, width directement dans la balise,
+préférez les utilisez dans l’attribut style en langage CSS pour garantir l’optimalité.
+			</p>
+			<em> Quelques exemples : </em>
+			<ul>
+				<li>style = "width : 32px ; height : 32px;"<br>
+					--> Définit la taille de mon objet de 32px X 32px</li>
+				<li>style="color:#1a3745; padding : 10px;" <br>
+					--> Indique que mon objet sera de couleur bleue avec une indentation de 10px</li>
+			</ul>
+			<p>
+				Aussi, n’oubliez pas les ";" à la fin du code CSS sinon il risque de ne pas être reconnu non plus.
+			</p>
+			<p>
+				Un autre souci, c’est que certain clients reconnaissent et affichent correctement la signature, mais
+				lorsqu’ils vous répondent, cette signature n’a plus la taille désirée. Pas de panique, ceci est dut à leur 
+				client de messagerie. Eux n’ont pas vu le changement seul vous recevez un mail avec cette signature.Si vous lui répondez, 
+				supprimez simplement l’ancienne ;)
+			</p>
+
+			<h3>intégration dans le client de messagerie </h3>
+			<p>
+				On arrive à la fin :D la dernière étape est d’insérer notre code dans notre gestionnaire de mail ;)
+			</p>
+			<p>
+				attention : le client de messagerie de l’ENT ne gère pas les signatures, il est donc impératif de télécharger un
+				client annexe soit Thunderbird soit Mail pour mac ;)
+			</p>
+			<ul><em>Pour Thunderbird donc :</em>
+				<li>Ouvrez un nouveau document texte (bloc note)</li>
+				<li>Copiez y le code html d’htmlonline</li>
+				<li>Enregistrez le sur votre ordinateur dans un endroit où vous ne le supprimerez pas ;) </li>
+				<li>Rendez vous dans thunderbird</li>
+				<li>Menu -> Option -> Paramètre de Compte </li>
+				<li>Allez dans la boite mail voulue mais vous pouvez apposer la même signature sur chacun de vos comptes </li>
+				<li>Cochez la case « aposer la signature à partir d’un fichier » </li>
+				<li>Recherchez votre fichier html et voilà ;)</li>
+			</ul>	
+			
+			<p>
+				Voilà voilà, on arrive à la fin de ce tuto :D
+			</p>
+			<p>
+				Amour & Papillon
+			</p>
+			<p> Vianney, CM de la team FOCEEN 2017</p>
+			
+
+		</section>
+	</body>
+</html>
