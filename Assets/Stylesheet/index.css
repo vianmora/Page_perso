@@ -1,0 +1,45 @@
+/* Position des images */
+
+.corps /* bloc des liens */
+{
+	/*position : relative;
+	width : 100%;*/
+	padding-top : 120px;
+}
+
+a img /* mise en forme des images-liens */
+{
+	width : 100%;
+}
+
+.k
+{
+		padding: 0px ;
+}
+
+a figcaption /* mise en forme des légendes */
+{
+	display : none;
+
+	position : absolute;
+	width : 100%;
+	height : 20%;
+	left : 1.9%;
+	bottom : -1.9%;
+
+	font-family : Foro, titillium,"cooper black", "arial black", sans-serif;
+	vertical-align : center;
+	font-size : 100%;
+	text-align : center;
+	color : white;
+
+	background-color : grey;
+	border-radius : 0px 0px 10px 10px;
+	opacity : 0.8;
+}
+
+/*
+{
+	border: solid 1px red;
+	margin : 3px;
+}*/

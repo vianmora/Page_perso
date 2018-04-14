@@ -12,8 +12,8 @@ body
 	background-position : center;
 	background-size: cover;
 	width:100%;
-	min-width: 700px;
-	padding : 30px;
+/*	min-width: 700px;
+	padding : 30px;*/
 }
 
 
@@ -37,7 +37,7 @@ h2
 
 p
 {
-	text-indent : 2%;
+	/*text-indent : 2%;*/
 	margin-top : 5px;
 }
 
@@ -46,13 +46,13 @@ h2 a
 	color : #8dc8fb;
 	text-decoration : underline;
 }
-
+/*
 #nav
 {
 	width : 85%;
 	margin : auto;
 	height : 50px;
-}
+}*/
 
 section
 {
@@ -60,12 +60,70 @@ section
 }
 
 
-img
+.corps img
 {
 	border-radius : 10px;
 	box-shadow : 10px 10px 10px black;
 }
 
+.footer
+{
+
+	width : 100%;
+	position : fixed;
+	bottom : 0px;
+	left : 0px;
+	rigth : 0px;
+
+	background-color : rgba(102, 131, 182, 0.7);
+	border-radius : 10px 10px 0px 0px;
+
+	display: flex;
+  justify-content: space-around;
+}
+
+#CV
+{
+	display : block;
+	width: : 350px;
+	border : solid 1px green;
+}
+
+.organismes
+{
+	display: flex;
+	justify-content: space-around;
+}
+
+.organismes a
+{
+	display : block;
+	width : 7%;
+}
+
+.contact
+{
+	display : flex;
+	justify-content: space-around;
+}
+
+/*
+#contact
+{
+	height : 20px;
+	margin : auto;
+
+}
+
+#contact a
+{
+
+	font-size : 100%;
+	color : #8dc8fb;
+	text-shadow : 2px 2px 4px black;
+	font-family : Foro, titillium,"cooper black", "arial black", sans-serif;
+}
+/*
 #CV
 {
 	position : fixed;
@@ -88,9 +146,7 @@ img
 footer
 {
 	width : 100%;
-	position : fixed;
-	bottom : -8px;
-	right : 5px;
+
 	display: flex;
     justify-content: space-between;
 }
@@ -122,23 +178,8 @@ footer li a img
 
 	border-radius : 30px;
 	box-shadow : 3px 3px 4px black;
-}
+}*/
 
-#contact
-{
-	height : 20px;
-	margin : auto;
-
-}
-
-#contact a
-{
-
-	font-size : 100%;
-	color : #8dc8fb;
-	text-shadow : 2px 2px 4px black;
-	font-family : Foro, titillium,"cooper black", "arial black", sans-serif;
-}
 
 a
 {
