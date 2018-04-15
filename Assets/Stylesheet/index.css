@@ -24,8 +24,8 @@ a figcaption /* mise en forme des légendes */
 	position : absolute;
 	width : 100%;
 	height : 20%;
-	left : 1.9%;
-	bottom : -1.9%;
+	left : 3px;
+	bottom : -3px;
 
 	font-family : Foro, titillium,"cooper black", "arial black", sans-serif;
 	vertical-align : center;
@@ -37,9 +37,3 @@ a figcaption /* mise en forme des légendes */
 	border-radius : 0px 0px 10px 10px;
 	opacity : 0.8;
 }
-
-/*
-{
-	border: solid 1px red;
-	margin : 3px;
-}*/

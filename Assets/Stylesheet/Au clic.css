@@ -2,12 +2,21 @@
 
 a:active img
 {
+	position : relative;
+	top : 5px;
+	left : 5px;
 	box-shadow : 0px 0px 0px black;
 }
 
+a:active figcaption
+{
+	height : 20%;
+	left : 5px;
+	bottom : -5px;
+}
 
 
-#Cours:active
+/*#Cours:active
 {
 	top :142px;
 	left : 18.7%;
@@ -42,9 +51,4 @@ a:active img
 {
 	top :320px;
 	right : 17.3%;
-}
-
-a:hover figcaption
-{
-	display : block;
-}
+}*/
