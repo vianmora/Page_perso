@@ -67,13 +67,15 @@ section
 	box-shadow : 10px 10px 10px black;
 }
 
+
+/* mise en forme du pied de page */
+
 .footer
 {
-
 	width : 100%;
-	height: 50px;
+	/*height: 50px;*/
 	padding-top: 10px;
-	padding-left: 10px;
+	padding-bottom: 10px;
 	position : fixed;
 	bottom : 0px;
 	left : 0px;
@@ -87,12 +89,33 @@ section
 .footer a
 {
 	color : #8dc8fb;
+	margin-top: auto;
+	margin-bottom: auto;
+	padding-right: 10px;
+	padding-left: 10px;
 }
 
-.contact img
+
+.contact a img
 {
-	width : 30%;
-	min-width: 30px;
+	width: 25px;
+}
+
+.organismes
+{
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.organismes a
+{
+	width: 20%;
+	text-align: center;
+}
+
+.organismes a img
+{
+	width: 60%;
 }
 /*
 #contact
@@ -171,4 +194,9 @@ footer li a img
 a
 {
 	text-decoration :  none;
+}
+
+/*
+{
+	border : solid red 1px;
 }

@@ -12,11 +12,6 @@ a img /* mise en forme des images-liens */
 	width : 100%;
 }
 
-.k
-{
-		padding: 0px ;
-}
-
 a figcaption /* mise en forme des légendes */
 {
 	display : none;
