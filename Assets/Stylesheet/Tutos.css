@@ -1,15 +1,15 @@
-section
+.corps
 {
 
 	width : 85%;
-	
+
 	margin : auto;
 	margin-top : 30px; /*gestion des espacement entre les blocs par le haut */
 	padding : 15px;
-	
+
 	background-color : rgba(102, 131, 182, 0.7);
 	border-radius : 10px;
-	
+
 }
 
 
@@ -34,7 +34,7 @@ section
 .gauche a
 {
 	border-right : solid /*#8dc8fb*/white 3px;
-	
+
 }
 
 .droite a
@@ -47,17 +47,17 @@ section
 	width : 100%;
 	margin-left : 30px;
 	margin-right : 30px;
-	
+
 }
 
-#liste figure
+.corps figure
 {
 	width : 100%;
 	margin : auto;
 	display: flex;
 }
 
-#liste figure a
+.corps figure a
 {
 	display : inline-block;
 	position : relative;
@@ -65,20 +65,20 @@ section
 	margin : 2%;
 }
 
-#liste figure a img
+.corps figure a img
 {
 	width : 100%;
 	opacity : 1.0;
 
 }
 
-#liste figure a figcaption
+.corps figure a figcaption
 {
 	position : relative;
 	top : 8px;
 	left : 2%;
 
-	
+
 	text-align : center;
 	color : white;
 	background-color : #1f4ebc;
@@ -91,7 +91,7 @@ section header
 {
 	color : white;
 	font-size : 1.2em;
-	
+
 	padding-left : 15px;
 }
 
@@ -115,15 +115,15 @@ a:hover img
 	position : relative;
 	top : 3px;
 	left : 3px;
-	box-shadow : 2px 2px 3px black;	
+	box-shadow : 2px 2px 3px black;
 }
 
 #CV:hover
 {
-	
+
 	text-shadow : 0.5px 0.5px 2px black;
 
-	
+
 	left : 1.3%;
 	bottom : 1.60% ;
 }
@@ -135,5 +135,10 @@ a:active img
 	position : relative;
 	top : 10 px;
 	left : 10 px;
-	box-shadow : 0px 0px 3px black;	
+	box-shadow : 0px 0px 3px black;
+}
+
+/*
+{
+	border : solid red 1px;
 }

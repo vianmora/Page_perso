@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 
 <html>
 	<head>
@@ -27,7 +27,7 @@
 			que voulez-vous faire :
 			<ul>
 				<li>
-					ajouter un article au blog 
+					ajouter un article au blog
 				</li>
 				<li>
 					modifier un article du blog (pas encore développé)
