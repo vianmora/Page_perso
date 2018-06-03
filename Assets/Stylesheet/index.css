@@ -1,34 +1,188 @@
-/* Position des images */
+/* bandeau d'en tête */
 
-.corps /* bloc des liens */
-{
-	/*position : relative;*/
-	width : 100%;
-	padding-top : 120px;
+.header{
+	width: 100%;
+	background-color : rgba(102, 131, 182, 0.9);
+	box-shadow : 0px 1px 7px black;
+	padding-top: 20px;
 }
 
-a img /* mise en forme des images-liens */
-{
-	width : 100%;
+.header a{
+	text-decoration: none;
+	color: rgba(0, 0, 0);
+	font-family : Roboto, titillium, "cooper black", "arial black", sans-serif;
+	text-align: center;
 }
 
-a figcaption /* mise en forme des légendes */
+/* Barre de navigation */
+
+nav{
+	width: 85%;
+	margin : auto;
+
+	margin-top: 15px;
+	padding-bottom: 10px;
+	padding-top: 0px;
+
+	border-top: solid black 1px;
+}
+
+nav .active{
+	font-weight: bold;
+}
+
+a[class="nav-link"]:hover{
+	text-decoration: underline;
+}
+
+/* Corps de la page : articles au sein d'une section */
+
+article
 {
-	display : none;
+	width : 85%;
 
-	position : absolute;
+	font-family : Roboto, titillium, "cooper black", "arial black", sans-serif;
+
+	margin : auto;
+	margin-top : 30px; /*gestion des espacement entre les blocs par le haut */
+	padding : 15px;
+
+	background-color : rgba(102, 131, 182, 0.9)/*rgba(102, 131, 182, 0.7)*/;
+	/*border : solid black 1px;*/
+	border-radius : 10px;
+	box-shadow : 0px 2px 8px black;
+	color: black;
+}
+
+/* les articles "listing" */
+
+.listing figure
+{
 	width : 100%;
-	height : 20%;
-	left : 3px;
-	bottom : -3px;
+	margin : auto;
+	display: flex;
+}
 
-	font-family : Foro, titillium,"cooper black", "arial black", sans-serif;
-	vertical-align : center;
-	font-size : 100%;
+.listing figure a
+{
+	display : inline-block;
+	position : relative;
+	width : 14%;
+	margin : 2%;
+}
+
+.listing figure a img
+{
+	width : 100%;
+	opacity : 1.0;
+}
+
+.listing figure a figcaption
+{
+	position : relative;
+	top : 15px;
+	left : 2%;
 	text-align : center;
-	color : white;
+	color : black;
+	/*background-color : /*#1f4ebcwhite;
+	border-radius : 10px;
+	box-shadow: inset 0px 2px 8px black;*/
+}
 
-	background-color : grey;
-	border-radius : 0px 0px 10px 10px;
-	opacity : 0.8;
+
+.listing header, .banniere header
+{
+	color : black;
+	font-size : 1.2em;
+
+	padding-left : 15px;
+}
+
+/* Les articles type "bannière" */
+
+.banniere a
+{
+	width : 20%;
+	padding : 2%;
+}
+
+.banniere a img
+{
+	width : 95%;
+}
+
+.banniere
+{
+	display: flex;
+	justify-content : space-between;
+}
+
+
+.b_gauche a
+{
+	border-right : solid /*#8dc8fb*/white 3px;
+
+}
+
+.b_droite a
+{
+	border-left : solid /*#8dc8fb*/white 3px;
+}
+
+.banniere figcaption
+{
+	width : 100%;
+	margin-left : 30px;
+	margin-right : 30px;
+
+}
+
+
+
+aside
+{
+	color : white;
+	width : 80%;
+	margin : auto;
+}
+
+#Etoile
+{
+	width : 20px;
+	box-shadow : none;
+}
+
+/* --------------- Au survol ----------------- */
+
+article a:hover img
+{
+	position : relative;
+	top : 3px;
+	left : 3px;
+	box-shadow : 2px 2px 3px black;
+}
+
+#CV:hover
+{
+
+	text-shadow : 0.5px 0.5px 2px black;
+
+
+	left : 1.3%;
+	bottom : 1.60% ;
+}
+
+/* --------------- Au Clic ------------------ */
+
+article a:active img
+{
+	position : relative;
+	top : 5px;
+	left : 5px;
+	box-shadow : 0px 0px 3px black;
+}
+
+/*
+{
+	border : solid red 1px;
 }

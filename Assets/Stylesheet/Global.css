@@ -1,10 +1,31 @@
-/* Style Global*/
+/* Style Global */
+/*
+On y trouve notamment :
+- la Police du site
+- L'arrière plan
+- la définition des styles de titres/paragraphes/liens
+- la mise en forme des vignettes
+- l'affichage de l'en-tête et du pied de page
+*/
+
+
 
 @font-face
 {
 	font-family: 'Foro';
-	src: url('../Polices/forolig.ttf');
+	src: url('..Assets/Polices/forolig.ttf');
+	font-family: 'Roboto';
+	src : url('..Assets/Polices/Roboto-Thin.ttf');
 }
+
+/*body
+{
+	background-color: rgb(255, 255, 255);
+	width:100%;
+	font-family : Roboto, titillium,"cooper black", "arial black", sans-serif;
+/*	min-width: 700px;
+	padding : 30px;
+}*/
 
 body
 {
@@ -18,56 +39,43 @@ body
 }
 
 
-h1
-{
-	font-family : Foro, titillium,"cooper black", "arial black", sans-serif;
-	width : 60%;
-	margin : auto;
-
-	font-size : 250%;
-	color : #8dc8fb;
-	text-align : center;
-}
-
-h2
-{
-	font-family : Foro, titillium,"cooper black", "arial black", sans-serif;
-	font-size : 180%;
-	color : #8dc8fb;
-}
-
 p
 {
 	/*text-indent : 2%;*/
 	margin-top : 5px;
 }
 
-a
+a, a:hover, a:active
 {
 	text-decoration :  none;
 }
 
-h2 a
+h2 a /*trouver une classe */
 {
 	color : #8dc8fb;
 	text-decoration : underline;
 }
 
-section
+section /*pourquoi c'est là ? */
 {
 	font-family : Foro, titillium,"cooper black", "arial black", sans-serif;
 }
+
+/* affichage des images */
+
+article img
+{
+	border-radius : 10px;
+	box-shadow : 10px 10px 10px black;
+}
+
+/*mise en forme de l'en-tête*/
 
 nav
 {
 	padding : 20px;
 }
 
-.corps img
-{
-	border-radius : 10px;
-	box-shadow : 10px 10px 10px black;
-}
 
 /* mise en forme du pied de page */
 
@@ -79,8 +87,9 @@ nav
 	padding-top: 10px;
 	padding-bottom: 10px;
 
-	background-color : rgba(102, 131, 182, 0);
-	border-radius : 10px 10px 0px 0px;
+	color : #8dc8fb;
+
+	border-top: solid rgba(102, 131, 182, 0.7) 1px;
 	white-space: nowrap ;
 }
 
@@ -92,22 +101,18 @@ nav
 	bottom : 0px;
 	left : 0px;
 	rigth : 0px;
-
+	border-radius : 10px 10px 0px 0px;
 	background-color : rgba(102, 131, 182, 0.7);
 }
 
-.concret_footer
+.footer div, .footer a
 {
-	background-color : rgba(102, 131, 182, 0.9);
-}
-
-.footer a
-{
-	color : #8dc8fb;
 	margin-top: auto;
 	margin-bottom: auto;
 	padding-right: 10px;
 	padding-left: 10px;
+
+	color : #8dc8fb;
 }
 
 

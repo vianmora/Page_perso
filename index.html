@@ -6,10 +6,8 @@
 
 			<!-- stylsheet -->
 			<link rel="stylesheet" href="Assets/bootstrap/css/bootstrap.css" >
-			<link rel="stylesheet" href="Assets/Stylesheet/Global.css" />
-			<link rel="stylesheet" href="Assets/Stylesheet/index.css" />
-			<link rel="stylesheet" href="Assets/Stylesheet/Au survol.css" />
-			<link rel="stylesheet" href="Assets/Stylesheet/Au clic.css" />
+			<link rel="stylesheet" href="Assets/Stylesheet/global.css" />
+			<link rel="stylesheet" href="Assets/Stylesheet/home.css" />
 
 
 		<meta charset = "utf-8">
@@ -22,27 +20,32 @@
 			</div>
 		</header>
 
-		<figure class = "container corps">
-			<div class = "row">
-				<a href = "Tutos/Tutos.html" id = "tutos" class = "col-2 offset-2">
+		<article class = "container">
+			<figure class = "row">
+				<a href = "Tutos/Tutos.html" id = "tutos" class = "vignette col-3 col-sm-2 offset-2">
 					<img src = "Assets/Images_site/Ampoule.png" alt ="Projets">
 					<figcaption>Tutos ECM</figcaption>
 				</a>
-				<a href = "Sites-ecm/Sites-utiles.html" id = "sites_utiles" class = "col-2 offset-1">
-					<img src = "Assets/Images_site/Projets.jpg" alt ="Toiturophilie">
+				<a href = "Sites-ecm/Sites_utiles.html" id = "sites_utiles" class = "vignette col-3 col-sm-2 offset-2 offset-sm-1">
+					<img src = "Assets/Images_site/Projets.jpg" alt ="sites utiles">
 					<figcaption>Sites utiles ECM</figcaption>
 				</a>
-				<a href = "Blog/index.php" id = "blog_voyage" class = "col-2 offset-1">
+				<a href = "#" id = "blog_voyage" class = "vignette col-3 col-sm-2 offset-2 offset-sm-1">
 					<img src = "Assets/Images_site/Yoga.jpg" alt ="yoga">
 					<figcaption>Blog voyage</figcaption>
 				</a>
-			</div>
-		</figure>
+			</figure>
+		</article>
 
 		<footer class = "footer index_footer">
 			<div class = "container-fluid d-md-flex">
 				<div class = "row">
-					<a href = "Pages/CV.html" class = "CV col-md-2 col-6 text-left"> Acces à mon CV</a>
+					<div class = "col-md-2 col-6 text-left container">
+						<div class="row">
+							<a href = "CV.html" class = "col-md-12 col-7"> Acces à mon CV</a>
+							<a href = "contact.html" class = "col-5 col-md-12" style="padding-right : 5px;">Me contacter </a>
+						</div>
+					</div>
 					<figure class = "col-md-6 container organismes d-none d-md-flex">
 							<div class = "row">
 								<a href = "https://sufstsulpice.free.fr/" title = "SUF saint Sulpice"><img src = "Assets/Images_site/Logos_sans_fonds/Logo_SUF.png" alt ="ISF_Logo"></a>
@@ -52,12 +55,13 @@
 								<a href = "https://forum-foceen.centrale-marseille.fr/" title = "forum FOCEEN"><img src = "Assets/Images_site/Logos_sans_fonds/Logo_FOCEEN.png" alt ="ISF_Logo"></a>
 							</div>
 					</figure>
-					<a href = "Pages/contact.html" class = "col-3 col-md-2 text-right" style="padding-right : 5px;">me contacter |    </a>
+					<div class = "col-3 col-md-2 text-right" style="padding-right : 5px;">Me suivre  |    </div>
 					<div class = "col-3 col-md-2 container contact d-flex">
 						<div class = "row">
-							<a href="https://www.facebook.com/vianney.morain/" class = "col-4 text-center"><img src="Assets/Images_site/Facebook.png" alt="Facebook"  /></a>
-							<a href="https://twitter.com/vianney.morain" class = "col-4 text-center"><img src="Assets/Images_site/Twitter.png" alt="Twitter"  /></a>
-							<a href="https://fr.linkedin.com/in/vianney-morain/" class = "col-4 text-center"><img src="Assets/Images_site/LinkedIn.png" alt="LinkedIn" /></a>
+							<a href="https://www.facebook.com/vianney.mrn/" class = "col-3 text-center"><img src="Assets/Images_site/Facebook.png" alt="Facebook"  /></a>
+							<a href="https://twitter.com/VianneyMorain" class = "col-3 text-center"><img src="Assets/Images_site/Twitter.png" alt="Twitter"  /></a>
+							<a href="https://https://www.instagram.com/vianneymorain/" class = "col-3 text-center"><img src="Assets/Images_site/insta.png" alt="Twitter"  /></a>
+							<a href="https://fr.linkedin.com/in/vianney-morain/" class = "col-3 text-center"><img src="Assets/Images_site/LinkedIn.png" alt="LinkedIn" /></a>
 						</div>
 					</div>
 				</div>
