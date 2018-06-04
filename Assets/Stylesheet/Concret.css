@@ -1,17 +1,17 @@
-section
+article
 {
 
 	width : 85%;
 	margin : auto;
 	margin-top : 30px;
 	padding : 25px;
-	
+
 	background-color : rgba(102, 131, 182, 0.9);
-	
+
 	border-radius : 10px;
 	display : flex;
 	flex-direction : column;
-	
+
 }
 
 section header h2
@@ -34,7 +34,6 @@ h3
 
 p
 {
-	text-indent : 2%;
 	margin-top : 1px;
 }
 
@@ -110,7 +109,7 @@ iframe
 	margin : auto;
 }
 
-img
-{
-	width : 100%;
+td a{
+	color : rgb(107, 185, 241);
+	text-decoration: underline;
 }
