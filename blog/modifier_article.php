@@ -41,12 +41,18 @@
 			</nav>
 		</header>
 
-		<?php if(!isset($_FILES['article'])){?>
+		<?php
+    $bdd_blog = new PDO('mysql:host=localhost;dbname=blog;charset=utf8', 'root', '');
+    if (isset($_GET['id_article'])){
+    $num_article = $_GET['id_article'];
+    $donnees = $bdd_blog->query("SELECT * FROM `articles` WHERE id=$num_article;")->fetch();
+    if(!isset($_FILES['article'])){?>
+
 		<section>
 			<article>
-				<h2>Ajouter un nouvel article</h2>
+				<h2>Modifier votre article : </h2>
 
-	      <form method="post" action="nouvel_article" enctype="multipart/form-data">
+	      <form method="post" action="modifier_article.php?id_article=<?php echo $_GET['id_article']?>" enctype="multipart/form-data">
 	        <label for="titre" >Titre de l'article</label>
 	        <input type="text" name="titre" /><br />
 					<label for="image">merci d'uploader le nouvel article au format.php :</label>
@@ -67,26 +73,23 @@
   	}
 
     else{
-			$bdd_blog = new PDO('mysql:host=localhost;dbname=blog;charset=utf8', 'root', '');
-
-			$donnees = $bdd_blog->query("SELECT MAX(id) AS 'id_max' FROM `articles`;")->fetch();
-			$num_articles = $donnees['id_max'] + 1;
+			$donnees = $bdd_blog->query("SELECT COUNT(*) AS 'nb_articles' FROM `articles`;")->fetch();
 
 			$infosimage = pathinfo($_FILES['image']['name']);
 			$extension_image = $infosimage['extension'];
 
-			move_uploaded_file($_FILES['image']['tmp_name'], '../Assets/Images_blog/' . $num_articles.'.'.$extension_image );
+			move_uploaded_file($_FILES['image']['tmp_name'], '../Assets/Images_blog/' . $num_article.'.'.$extension_image );
 
-			move_uploaded_file($_FILES['article']['tmp_name'], 'articles/' . $num_articles.'.php' );
+			move_uploaded_file($_FILES['article']['tmp_name'], 'articles/' . $num_article.'.php' );
 
 			?>
 			<section>
 				<article>
-					<h2>Félicition, votre nouvel article est désormais en ligne ! </h2>
+					<h2>Félicition, votre article est désormais en ligne ! </h2>
 					<a href="blog.php"><div class="boutton">
 						Retour vers le blog
 					</div></a>
-					<a href="blog.php"><div class ="boutton">
+					<a href="modifier_article?id_article=<?php echo $num_article; ?>"><div class ="boutton">
 						modifier votre article
 					</div></a>
 				</article>
@@ -95,17 +98,21 @@
 
 			<?php
 
-			$req = $bdd_blog->prepare("INSERT INTO `articles` (titre, intro,  tags, image) VALUES(:titre, :intro, :tags, :image)");
+			$req = $bdd_blog->prepare("UPDATE `articles` SET titre = :titre, intro = :intro, tags = :tags, image = :image, date_modif = :date_modif WHERE id=$num_article;");
 
       $req -> execute(array(
         'titre'=> $_POST['titre'],
         'intro' => $_POST['intro'],
         'tags' => $_POST['tags'],
-				'image' => '../Assets/Images_blog/' . $num_articles.'.'.$extension_image
+				'image' => '../Assets/Images_blog/' . $num_article.'.'.$extension_image,
+        'date_modif' => time()
       ));
 
-    }
-		?>
+    }}
+    else{
+      header('Location: blog.php');
+    }?>
+
 		<footer>
 			<?php
 				//include mon super footer où je dis où ils peuvent me contacter, et les copyrights

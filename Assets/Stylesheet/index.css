@@ -1,12 +1,16 @@
 /* Corps de la page : articles au sein d'une section */
 
+section{
+	width : 85%;
+		margin : auto;
+}
+
+
 article
 {
-	width : 85%;
-
 	font-family : Roboto, titillium, "cooper black", "arial black", sans-serif;
+	width: 100%;
 
-	margin : auto;
 	margin-top : 30px; /*gestion des espacement entre les blocs par le haut */
 	padding : 15px;
 
@@ -15,6 +19,13 @@ article
 	border-radius : 10px;
 	box-shadow : 0px 2px 8px black;
 	color: black;
+}
+
+.date_article{
+	text-align: right;
+	font-size: 100%;
+	font-weight: normal;
+	font-style: italic;
 }
 
 /* les articles "listing" */
@@ -79,7 +90,6 @@ article
 	display: flex;
 	justify-content : space-between;
 }
-
 
 .b_gauche a
 {

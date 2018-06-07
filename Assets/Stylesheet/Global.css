@@ -104,8 +104,23 @@ article a img
 	box-shadow : 2px 2px 8px black;
 }
 
+/* générer des bouttons propres*/
+.boutton{
+	background-color : rgba(102, 131, 182, 0.9);
+	border-radius : 10px;
+	box-shadow : 3px 3px 8px black;
+	color: black;
+	margin-top : 20px;
+	width: 150px;
+	padding-left: 10px;
+}
 
-
+a:hover .boutton{
+	position: relative;
+	top : 2px;
+	left : 2px;
+	box-shadow : 1px 1px 4px black;
+}
 
 /* mise en forme du pied de page */
 
@@ -130,7 +145,7 @@ article a img
 	left : 0px;
 	rigth : 0px;
 	border-radius : 10px 10px 0px 0px;
-	background-color : rgba(102, 131, 182, 0.7);
+	background-color : rgba(102, 131, 182);
 	border: solid rgba(0, 0, 0) 0px;
 }
 
