@@ -19,12 +19,8 @@ article
 	color: black;
 }
 
-h3
-{
-	text-decoration : underline;
-	font-style : normal;
-	font-weight : bold;
-	margin-bottom : 1%;
+h3{
+	text-decoration: underline;
 }
 
 p

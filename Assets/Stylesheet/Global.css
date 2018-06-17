@@ -3,7 +3,7 @@
 On y trouve notamment :
 - la Police du site
 - L'arrière plan
-- la définition des styles de titres/paragraphes/liens
+- la définition des styles de titres/paragraphes/liens/bouttons
 - la mise en forme des vignettes
 - l'affichage de l'en-tête et du pied de page
 */
@@ -34,28 +34,56 @@ body
 	font-family : Foro, titillium,"cooper black", "arial black", sans-serif;
 }*/
 
+/* définition des styles de titre */
+
+h1 /*titre des articles*/
+{
+	font-size: 2.2em;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+h2 /* sous-titre des articles*/
+{
+	font-size: 1.8em;
+	text-align: center;
+}
+
+h3 /* partie des articles*/
+{
+	font-size: 1.4em;
+	font-weight: bold;
+	text-align: left;
+	text-decoration: underline;
+	margin-bottom: 10px;
+}
+
+h4 /* titre des listings/bannieres*/
+{
+	font-size: 1.4em;
+	text-align: left;
+	font-weight: normal;
+}
+
+h5 /* sous-parties des articles*/
+{
+	font-size: 1em;
+	text-decoration: underline;
+	text-align: left;
+	margin-bottom: 10px;
+}
 
 p
 {
 	/*text-indent : 2%;*/
-	margin-top : 5px;
+	margin-top : 15px;
+	padding-left: 10px;
 }
 
-a, a:hover, a:active, a:visited
+a, a:hover, a:visited
 {
 	text-decoration :  none;
 	color: black;
-}
-
-h2 a /*trouver une classe */
-{
-	color : #8dc8fb;
-	text-decoration : underline;
-}
-
-section /*pourquoi c'est là ? */
-{
-	font-family : Foro, titillium,"cooper black", "arial black", sans-serif;
 }
 
 /* bandeau d'en tête */
@@ -66,13 +94,19 @@ section /*pourquoi c'est là ? */
 	box-shadow : 0px 1px 7px black;
 	padding-top: 20px;
 	min-height: 90px;
-}
 
-.header a, .header h1{
 	text-decoration: none;
 	color: rgba(0, 0, 0);
 	font-family : Roboto, titillium, "cooper black", "arial black", sans-serif;
 	text-align: center;
+}
+
+.header h1{
+	font-size: 2.5em;
+}
+
+.header h2{
+	font-size: 2em;
 }
 
 /* Barre de navigation */
@@ -115,7 +149,7 @@ article a img
 	padding-left: 10px;
 }
 
-a:hover .boutton{
+.boutton:hover{
 	position: relative;
 	top : 2px;
 	left : 2px;
