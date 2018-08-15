@@ -1,3 +1,20 @@
 page d'accueil :
 - logos RS de la même couleur
 - enlever fond blanc du logo Scouts
+
+sites utiles
+- passer en php avec possibilité d'ajouter des sites sois meme
+
+footer
+- attention taille écran pour logo RS
+
+tout
+- mettre photo de lien pour og
+
+carnets de grand Maman
+------------------- visualiser toutes les citations
+------------------- améliorer l'affichage sur la page d'accueil*/
+- renseigner les citations
+
+prochaine étape
+------------------- séparer blog et page perso dans les fichiers

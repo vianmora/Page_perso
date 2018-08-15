@@ -1,8 +1,8 @@
 /* Corps de la page : articles au sein d'une section */
 
 section{
-	width : 85%;
-		margin : auto;
+	/*width : 85%;*/
+		/*margin : auto;*/
 }
 
 
@@ -16,7 +16,7 @@ article
 
 	background-color : rgba(102, 131, 182, 0.9)/*rgba(102, 131, 182, 0.7)*/;
 	/*border : solid black 1px;*/
-	border-radius : 10px;
+
 	box-shadow : 0px 2px 8px black;
 	color: black;
 }
@@ -29,6 +29,10 @@ article
 }
 
 /* les articles "listing" */
+
+.listing{
+	border-radius: 10px;
+}
 
 .listing figure
 {
@@ -89,12 +93,12 @@ article
 {
 	display: flex;
 	justify-content : space-between;
+	border-radius : 10px 10px 10px 10px;
 }
 
 .b_gauche a
 {
 	border-right : solid /*#8dc8fb*/white 3px;
-
 }
 
 .b_droite a
@@ -115,8 +119,7 @@ article
 aside
 {
 	color : white;
-	width : 80%;
-	margin : auto;
+	/*width : 80%;*/
 }
 
 #Etoile

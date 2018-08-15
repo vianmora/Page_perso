@@ -1,28 +1,8 @@
 /* Pour la page CV */
 
-h1
-{
-	font-family : Roboto, titillium,"cooper black", "arial black", sans-serif;
-	width : 60%;
-	margin : auto;
 
-	font-size : 250%;
-	color : #8dcdfb;
-	text-align : center;
-}
 
-h2
-{
-	font-family : Roboto, titillium,"cooper black", "arial black", sans-serif;
-	width : 30%;
-	margin : auto;
 
-	font-size : 120%;
-	color : black;
-	text-align : center;
-	border-radius: 10px;
-	background-color : rgba(102, 131, 182, 0.9);
-}
 
 figure{
   width: 40%;

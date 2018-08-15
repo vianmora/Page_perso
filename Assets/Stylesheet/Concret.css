@@ -1,7 +1,7 @@
-section{
+/*section{
 	width : 85%;
 		margin : auto;
-}
+}*/
 
 article
 {
@@ -14,19 +14,11 @@ article
 
 	background-color : rgba(102, 131, 182, 0.9)/*rgba(102, 131, 182, 0.7)*/;
 	/*border : solid black 1px;*/
-	border-radius : 10px;
+
 	box-shadow : 0px 2px 8px black;
 	color: black;
 }
 
-h3{
-	text-decoration: underline;
-}
-
-p
-{
-	margin-top : 1px;
-}
 
 .date_article{
 	text-align: right;
@@ -36,9 +28,10 @@ p
 }
 
 .image_article{
-	width: 80%;
-	margin : auto;
+	display: block;
+	margin:auto;
 }
+
 
 .figc_article{
 	text-align: center;
@@ -46,17 +39,25 @@ p
 	color: rgb(59, 59, 59);
 }
 
+.article-top{
+		border-radius : 10px 10px 0px 0px;
+}
+
+.commentaires{
+	border-radius : 0px 0px 10px 10px;
+}
+
 #pause p
 {
 	text-indent : 0%;
 }
 
-aside
+/*aside
 {
 	display : flex;
 	justify-content: space-between;
 	padding-right : 70px;
-}
+}*/
 
 
 figure img
@@ -65,25 +66,11 @@ figure img
 	box-shadow : none;
 }
 
-#Logos_Adobe
-{
-	width : 50%;
-}
-
 #Logos_Office
 {
 	width : 25%;
 }
 
-#capture_CC
-{
-	width : 60%;
-}
-
-#capture_amtemu
-{
-	width : 65%;
-}
 
 
 
@@ -114,10 +101,5 @@ td
 
 iframe
 {
-	margin : auto;
-}
-
-td a{
-	color : rgb(107, 185, 241);
-	text-decoration: underline;
+	/*margin : auto;*/
 }
